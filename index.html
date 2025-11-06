@@ -47,6 +47,20 @@
         <button type="button" id="addToWishlistButton">Add to Wishlist</button>
 
         <button type="button" id="purchaseButton">Purchase</button>
+
+        <!-- Your button -->
+<button id="firePixelBtn">Fire Pixel</button>
+
+<script>
+document.getElementById('firePixelBtn').addEventListener('click', function() {
+  var img = document.createElement('img');
+  img.height = 1;
+  img.width = 1;
+  img.style.display = 'none';
+  img.src = 'https://www.facebook.com/tr?id=YOUR_PIXEL_ID&ev=PageView&eventID=UNIQUE_ID_HERE&noscript=1';
+  document.body.appendChild(img);
+});
+</script>
     </form>
 
     <!-- JavaScript to trigger the addToCart event -->
